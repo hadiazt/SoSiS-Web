@@ -4,8 +4,9 @@
   "description": "SoSiS Bots Website",
   "main": "./Src/Server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hadiazt/SoSiS-Web.git"
