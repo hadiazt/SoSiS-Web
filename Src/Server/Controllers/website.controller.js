@@ -25,7 +25,7 @@ exports.love = async (req, res) => {
                 if (id.startsWith(user.id)) {
                     const target = id.split(".").slice("")[1];
 
-                    User({ UserID: target, BotToken: process.env.botToken }).then((response) => {
+                    User({ UserID: target, BotToken: process.env.BotToken }).then((response) => {
                         result.push({
                             user: {
                                 name: user.tag,
