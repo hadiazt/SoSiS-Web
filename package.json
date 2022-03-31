@@ -1,0 +1,25 @@
+{
+  "name": "sosis-web",
+  "version": "1.0.0",
+  "description": "SoSiS Bots Website",
+  "main": "./src/server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hadiazt/SoSiS-Web.git"
+  },
+  "keywords": [
+    "bot",
+    "dashboard",
+    "webapp",
+    "wesite"
+  ],
+  "author": "hadi.az",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hadiazt/SoSiS-Web/issues"
+  },
+  "homepage": "https://github.com/hadiazt/SoSiS-Web#readme"
+}
