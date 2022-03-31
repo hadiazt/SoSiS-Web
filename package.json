@@ -2,7 +2,7 @@
   "name": "sosis-web",
   "version": "1.0.0",
   "description": "SoSiS Bots Website",
-  "main": "./src/Server/server.js",
+  "main": "./Src/Server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
