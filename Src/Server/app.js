@@ -23,12 +23,12 @@ app.use((req, res, next) => {
 });
 
 app.use('/', websiteRouter);
+app.use("/love", websiteRouter);
 // app.use("/main", websiteRouter);
 // app.use("/security", websiteRouter);
 // app.use("/downloader", websiteRouter);
 // app.use("/contributors", websiteRouter);
 
-// app.use("/main/love", websiteRouter);
 
 app.use(require("./Controllers/error.controller").get404);
 
