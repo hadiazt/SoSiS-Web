@@ -3,7 +3,12 @@ const { User } = require("discord-info")
 const { Database } = require('beta.db')
 const db = new Database('./Src/Public/data.json')
 
-exports.main = async (req, res) => {
+
+exports.index = async (req, res) => {
+    res.render("../Pages/index.ejs", {});
+};
+
+exports.love = async (req, res) => {
     const result = []
 
     axios.get('https://raw.githubusercontent.com/hadiazt/SoSiS-v2/main/data/love.json').then(res => {
@@ -17,7 +22,17 @@ exports.main = async (req, res) => {
                     const target = id.split(".").slice("")[1];
 
                     User({ UserID: target, BotToken: 'ODE5ODgzMDc4OTM0NTkzNTQ2.YEtFng.jQWSdZj0H-PiRc4QyDV_NouVHNE' }).then((response) => {
-                        result.push({ user: user.tag, target: response.tag, num: db.objectFetch("Data", `${user.id}.${response.id}`) })
+                        result.push({
+                            user: {
+                                name: user.tag,
+                                avatar: user.avatar.png
+                            },
+                            target: {
+                                name: response.tag,
+                                avatar: response.avatar.png
+                            },
+                            num: db.objectFetch("Data", `${user.id}.${response.id}`)
+                        })
                     })
                 }
             })
@@ -25,11 +40,12 @@ exports.main = async (req, res) => {
     })
 
     setTimeout(() => {
-        res.render("../Pages/index.ejs", {
+        res.render("../Pages/love.ejs", {
             result,
         });
     }, 6000);
 
 };
+
 
 
