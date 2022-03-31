@@ -4,9 +4,9 @@ const app = express();
 
 app.use(expressLayout);
 app.set("view engine", "ejs");
-app.set("views", "views");
+app.set("views", "src/Pages");
 
-app.use(express.static("../public"));
+app.use(express.static("../Public"));
 app.use("/", require("./Routes/index.js"))
 
 
