@@ -5,7 +5,10 @@ const db = new Database('./Src/Public/data.json')
 
 
 exports.index = async (req, res) => {
-    res.render("../Pages/index.ejs", {});
+    res.render("../Pages/index.ejs", {
+        title:"SoSiS - Imagine a bot",
+        icon:"https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048"
+    });
 };
 
 exports.love = async (req, res) => {
