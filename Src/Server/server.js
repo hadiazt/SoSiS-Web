@@ -7,12 +7,13 @@ app.set("view engine", "ejs");
 app.set("views", "src/Pages");
 
 app.use(express.static("../Public"));
-app.use("/", require("./Routes/index.js"))
-app.use("/main", require("./Routes/index.js"))
-app.use("/security", require("./Routes/index.js"))
-app.use("/downloader", require("./Routes/index.js"))
-app.use("/contributors", require("./Routes/index.js"))
+app.use("/", require("./Routes/.js"))
+app.use("/main", require("./Routes/.js"))
+app.use("/security", require("./Routes/.js"))
+app.use("/downloader", require("./Routes/.js"))
+app.use("/contributors", require("./Routes/.js"))
 
+app.use("/main/love", require("./Routes/.js"))
 
 
 const PORT = 3000;
