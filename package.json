@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/hadiazt/SoSiS-Web#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-ejs-layouts": "^2.5.1"
   }
 }
