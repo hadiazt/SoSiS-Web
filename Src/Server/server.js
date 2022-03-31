@@ -6,7 +6,6 @@ app.listen(process.env.port, () => {
     console.log(`App running on  http://localhost:${port}`);
 });
 
-
 process.on('unhandledRejection', err => {
     console.log(err)
 });
