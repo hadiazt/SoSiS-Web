@@ -1,7 +1,5 @@
 - [X] 404 Page
-- [] Main Page => BreakPoint : {
-        NavBar [X],
-    }
+- [X] Main Page
 - [] SoSiS love DB Page => BreakPoint : {
         Fetchind Data [X],
     }
