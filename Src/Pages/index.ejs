@@ -8,11 +8,11 @@
     <link rel="icon" href="<%- icon %>" />
     <link rel="stylesheet" href="./css/index.css" >
     <link rel="stylesheet" href="./css/responsive/index.css" >
-
+    <script src="https://kit.fontawesome.com/31fd7c4de0.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <nav>
+    <div class="nav-a">
         <div class="logo">
             <img src="<%- icon %> " alt="Logo Image">
         </div>
@@ -27,7 +27,22 @@
             <% }) %>
             <li><button class="join-button" href="<%- support %>">Support</button></li>
         </ul>
-    </nav>
+    </div>
+
+    <div class="intro">
+        <h1>SoSiS</h1>
+        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, doloremque placeat! Expedita fugiat tenetur, ratione, ex corporis reiciendis hic dolore saepe doloribus praesentium dicta minima minus nam adipisci dignissimos alias?</h4>
+        <button class="join-button" href="#sosis">Get Start <i class="fa-solid fa-arrow-down"></i></button>
+    </div>
+
+
+        <!-- <% bots.forEach(bot => { %>
+            <div class = "bots">
+                <img class="bots-av" src="<%- bot.avatar.png %>" alt="<%- bot.username %>" />
+                <p class="bots-name"><%- bot.username %></p>
+            </div>
+        <% }) %> -->
+
 
 </body>
 <script src="./js/index.js"></script>
