@@ -107,18 +107,6 @@ nav {
     transition: all ease-in-out 350ms;
 }
 
-.hamburger div {
-    width: 30px;
-    height: 3px;
-    background: #f2f5f7;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-.hamburger {
-    display: none;
-}
-
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
