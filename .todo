@@ -1,11 +1,11 @@
-- [X] 404 Page Design
+- [X] 404 Page
 - [] Main Page => BreakPoint : {
         NavBar [X],
     }
-- [] SoSiS love DB Page Design => BreakPoint : {
+- [] SoSiS love DB Page => BreakPoint : {
         Fetchind Data [X],
     }
-- [] SoSiS Page Design
-- [] SoSiS Security Page Design
-- [] SoSiS Downloader Page Design
-- [] Contributors Page Design
+- [] SoSiS Page
+- [] SoSiS Security Page
+- [] SoSiS Downloader Page
+- [] Contributors Page
