@@ -14,7 +14,7 @@ body {
 }
 
 nav {
-    height: 6rem;
+    height: 4rem;
     width: 100vw;
     background-color: #131418;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
@@ -29,8 +29,8 @@ nav {
 }
 
 .logo img {
-    height: 5rem;
-    width: 5rem;
+    height: 3.2rem;
+    width: 3.2rem;
     border-radius: 50%;
 }
 
@@ -50,7 +50,7 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: #61DAFB;
+    color: #faac4c;
 }
 
 .nav-links li {
@@ -62,7 +62,7 @@ nav {
     display: block;
     height: 3px;
     width: 0%;
-    background-color: #61DAFB;
+    background-color: #faac4c;
     position: absolute;
     transition: all ease-in-out 250ms;
     margin: 0 0 0 10%;
@@ -72,28 +72,10 @@ nav {
     width: 80%;
 }
 
-.login-button {
-    background-color: transparent;
-    border: 1.5px solid #f2f5f7;
-    border-radius: 2em;
-    padding: 0.6rem 0.8rem;
-    margin-left: 2vw;
-    font-size: 1rem;
-    cursor: pointer;
-
-}
-
-.login-button:hover {
-    color: #131418;
-    background-color: #f2f5f7;
-    border: 1.5px solid #f2f5f7;
-    transition: all ease-in-out 350ms;
-}
-
 .join-button {
     color: #131418;
-    background-color: #61DAFB;
-    border: 1.5px solid #61DAFB;
+    background-color: #faac4c;
+    border: 1.5px solid #faac4c;
     border-radius: 2em;
     padding: 0.6rem 0.8rem;
     font-size: 1rem;
