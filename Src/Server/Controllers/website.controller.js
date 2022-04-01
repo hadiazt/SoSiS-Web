@@ -8,7 +8,33 @@ require('dotenv').config({ path: './Src/Server/config.env' });
 exports.index = async (req, res) => {
     res.render("../Pages/index.ejs", {
         title: "SoSiS - Imagine a bot",
-        icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048"
+        icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
+        pages: [
+            {
+                name: 'Home',
+                url: '/'
+            },
+            {
+                name: 'Love DB',
+                url: '/love'
+            },
+            {
+                name: 'SoSiS',
+                url: '/main'
+            },
+            {
+                name: 'Security',
+                url: '/security'
+            },
+            {
+                name: 'Downloader',
+                url: '/downloader'
+            },
+            {
+                name: 'Contributors',
+                url: '/contributors'
+            },
+        ]
     });
 };
 
