@@ -9,19 +9,35 @@
     <link rel="stylesheet" href="./css/index.css" >
     <link rel="stylesheet" href="./css/responsive/index.css" >
     <script src="https://kit.fontawesome.com/31fd7c4de0.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
 
-    <%- include('includes/navbar.ejs'); -%>
+    <!-- <%- include('includes/navbar.ejs'); -%> -->
 
+    <div class="nav-a">
+        <div class="logo">
+            <img src="<%- icon %> " alt="Logo Image">
+        </div>
+        <div class="line">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <% pages.forEach(page => { %>
+            <li><a href="<%- page.url %>"><%- page.name %></a></li>    
+            <% }) %>
+            <li><a href="<%- support %>" ><button class="join-button" >Support</button></li></a>
+        </ul>
+    </div>
 
     <div class="intro">
         <img src="<%- icon %>" style="border-radius: 50%;width: 250px; height: 250px;" />
         <h1>SoSiS</h1>
         <h4>A team of developers in Discord space created in 2020 to help and make it easy for users in the environment of Discord application.</h4>
-        <a href="#sosis"><button class="join-button" style="margin-top: 20px;">Get Start <i class="fa-solid fa-arrow-down"></i></button></a>
+        <a href="<%- support %>"><button style="margin-top: 20px;" class="join-button">Support</button></a>
     </div>
-
 
 </body>
 <script src="./js/nav.js"></script>
