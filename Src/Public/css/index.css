@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffca2b;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +19,12 @@
     letter-spacing: 1px;
     font-weight: 300;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     overflow-x: hidden;
+    background-color: #131418;
 }
 
 .nav-a {
@@ -116,6 +130,8 @@ body {
 /*  */
 
 .intro{
+    width: 100%;
+    height: 100%;
     padding: 10px;
     background-color: #131418;
     text-align: center;
