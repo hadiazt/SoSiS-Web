@@ -13,24 +13,7 @@
 </head>
 <body>
 
-    <!-- <%- include('includes/navbar.ejs'); -%> -->
-
-    <div class="nav-a">
-        <div class="logo">
-            <img src="<%- icon %> " alt="Logo Image">
-        </div>
-        <div class="line">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        <ul class="nav-links">
-            <% pages.forEach(page => { %>
-            <li><a href="<%- page.url %>"><%- page.name %></a></li>    
-            <% }) %>
-            <li><a href="<%- support %>" ><button class="join-button" >Support</button></li></a>
-        </ul>
-    </div>
+    <%- include('includes/navbar.ejs'); -%>
 
     <div class="intro">
         <img src="<%- icon %>" style="border-radius: 50%;width: 250px; height: 250px;" />
