@@ -9,18 +9,19 @@ exports.index = async (req, res) => {
     res.render("../Pages/index.ejs", {
         title: "SoSiS - Imagine a bot",
         icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
+        support:"https://discord.gg/6vhPVYkNU9",
         pages: [
             {
                 name: 'Home',
                 url: '/'
             },
             {
-                name: 'Love DB',
-                url: '/love'
-            },
-            {
                 name: 'SoSiS',
                 url: '/main'
+            },
+            {
+                name: 'Love DB',
+                url: '/love'
             },
             {
                 name: 'Security',
