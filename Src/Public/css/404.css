@@ -1,0 +1,50 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #141516;
+    display: grid;
+    place-items: center;
+}
+
+.main-404 {
+    width: 470px;
+    line-height: 1.65;
+}
+
+.main-404-title {
+    font-size: 40px;
+    color: #f8f8f8;
+    font-weight: bold;
+    margin: 0;
+}
+
+.main-404-desc {
+    font-size: 15px;
+    color: #e8e8e8;
+    font-weight: normal;
+}
+
+.main-404-redirect {
+    color: #e8e8e8;
+    margin: 0;
+}
+
+.main-404-redirect li a {
+    color: #3360ff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.main-404-redirect li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+    .main-404 {
+        width: calc(100% - 1.5rem);
+        padding: 0 0.75rem;
+    }
+}
