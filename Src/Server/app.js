@@ -11,7 +11,7 @@ app.set("views", "Src/Pages");
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("../Public"));
+app.use(express.static("Src/Public"));
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(express.json({ limit: '10kb' }));
 app.use(compression());
