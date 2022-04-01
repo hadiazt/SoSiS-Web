@@ -1,11 +1,12 @@
+const line = document.querySelector(".line");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 
-hamburger.addEventListener('click', ()=>{
+line.addEventListener('click', ()=>{
     navLinks.classList.toggle("open");
     links.forEach(link => {
         link.classList.toggle("fade");
     });
 
-    hamburger.classList.toggle("toggle");
+    line.classList.toggle("toggle");
 });
