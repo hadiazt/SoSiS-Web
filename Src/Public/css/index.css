@@ -13,13 +13,12 @@ body {
     overflow-x: hidden;
 }
 
-nav {
+.nav-a {
     height: 4rem;
     width: 100vw;
     background-color: #131418;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
-    position: fixed;
     z-index: 10;
 }
 
@@ -112,4 +111,12 @@ nav {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*  */
+
+.intro{
+    padding: 10px;
+    background-color: #131418;
+    text-align: center;
 }
