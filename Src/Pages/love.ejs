@@ -14,11 +14,18 @@
 
     <%- include('includes/navbar.ejs'); -%>
 
-    
+
+        <form action="/love" method="GET">
+          <input name="user" class="search" type="text" placeholder="Please enter the user id to search">
+        </form>
+
+
     <% if(user) { %>
+
         <% result.forEach(res => { %>
             <%- res.user.avatar %>
         <% }) %>
+
     <% } else { %>
         nop
     <% } %>
