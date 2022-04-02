@@ -15,9 +15,15 @@
     <%- include('includes/navbar.ejs'); -%>
 
     
-    <% result.forEach(res => { %>
-        <%- res.user.avatar %>
-    <% }) %>
+    <% if(user) { %>
+        <% result.forEach(res => { %>
+            <%- res.user.avatar %>
+        <% }) %>
+    <% } else { %>
+        nop
+    <% } %>
+
+
 
 </body>
 <script src="./js/nav.js"></script>
