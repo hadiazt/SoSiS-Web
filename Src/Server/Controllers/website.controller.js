@@ -6,18 +6,11 @@ require('dotenv').config({ path: './Src/Server/config.env' });
 
 
 exports.index = async (req, res) => {
-    const bots = []
 
-    User({ UserID: '762378493929455617', BotToken: process.env.BotToken }).then((user) => { bots.push(user) })
-    User({ UserID: '780703694886010902', BotToken: process.env.BotToken }).then((user) => { bots.push(user) })
-    User({ UserID: '768503531526291499', BotToken: process.env.BotToken }).then((user) => { bots.push(user) })
-
-    setTimeout(() => {
         res.render("../Pages/index.ejs", {
             title: "SoSiS - Imagine a bot",
             icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
             support: "https://discord.gg/6vhPVYkNU9",
-            bots,
             pages: [
                 {
                     name: 'Home',
@@ -45,7 +38,6 @@ exports.index = async (req, res) => {
                 },
             ]
         });
-    }, 6000);
 
 };
 
@@ -54,7 +46,7 @@ exports.love = async (req, res) => {
 
     axios.get('https://raw.githubusercontent.com/hadiazt/SoSiS-v2/main/data/love.json').then(res => {
         db.set("Data", res.data);
-        const user = '806903080754872372'
+        const user = '744431935316688916'
         const ids = Object.keys(res.data)
 
         User({ UserID: user, BotToken: process.env.BotToken }).then((user) => {
@@ -84,7 +76,34 @@ exports.love = async (req, res) => {
         res.render("../Pages/love.ejs", {
             title: 'SoSiS - Love DataBase',
             icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
+            support: "https://discord.gg/6vhPVYkNU9",
             result,
+            pages: [
+                {
+                    name: 'Home',
+                    url: '/'
+                },
+                {
+                    name: 'SoSiS',
+                    url: '/main'
+                },
+                {
+                    name: 'Love DB',
+                    url: '/love'
+                },
+                {
+                    name: 'Security',
+                    url: '/security'
+                },
+                {
+                    name: 'Downloader',
+                    url: '/downloader'
+                },
+                {
+                    name: 'Contributors',
+                    url: '/contributors'
+                },
+            ]
         });
     }, 6000);
 
