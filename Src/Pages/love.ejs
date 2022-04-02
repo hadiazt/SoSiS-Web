@@ -5,13 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%- title %></title>
-    <link rel="icon" href="<%- icon %>">
+    <link rel="icon" href="<%- icon %>" />
+    <link rel="stylesheet" href="./css/love.css" >
+    <link rel="stylesheet" href="./css/responsive/index.css" >
+    <script src="https://kit.fontawesome.com/31fd7c4de0.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <%- include('includes/navbar.ejs'); -%>
+
     
     <% result.forEach(res => { %>
         <%- res.user.avatar %>
     <% }) %>
 
 </body>
+<script src="./js/nav.js"></script>
+
 </html>
