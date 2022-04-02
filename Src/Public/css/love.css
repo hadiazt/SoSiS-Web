@@ -121,7 +121,7 @@ body {
     margin: 20px auto auto auto;
     display: block;
     width: 600px;
-    height: 200px;
+    height: auto;
     padding: 10px;
     background-color: #EA2F48;
     border-radius: 20px;
@@ -148,8 +148,42 @@ body {
 }
 
 
-/* .search:hover{
-    transform: translateY(-5px);
+.table {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* position: relative; */
+}
+
+.card {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background-color: #212324;
+    margin: 20px 20px 20px 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: translateY(-8px);
     transition: .4s;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-} */
+}
+.card-body{
+    padding: 10px;
+}
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.iimg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
