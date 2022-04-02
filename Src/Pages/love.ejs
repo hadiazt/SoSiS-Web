@@ -21,19 +21,49 @@
         </form>
 
         <div class="text">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, explicabo. Consectetur incidunt explicabo sit hic pariatur nesciunt odio illum a eveniet fugiat sequi dolorum, culpa necessitatibus voluptates maiores iste! Aspernatur.
+
+        <% if(user) { %>
+            <% if(result[0]) { %>
+                Users found for :
+                <a class="card" style="width: 5rem;">
+                    <div class="card-body">
+                    <div>
+                        <img class="iimg" src="<%- result[0].user.avatar %>">
+                    </div>
+                    <h3 class="iname"><%- result[0].user.name %></h3>
+                    </div>
+                </a>
+            <% } %>
+        <% } else {%>
+            <p style="text-align: center;">Enter the user id to search in Love DB</p>
+        <% } %>
+
         </div>
     </div>
 
 
     <% if(user) { %>
+        <div class="table">
 
-        <% result.forEach(res => { %>
-            <%- res.target.avatar %>
-        <% }) %>
+            <% if(!result[0]) { %>
+                Nothing found for your input
+            <% } else { %>
+                <% result.forEach(res => { %>
 
-    <% } else { %>
-        nop
+                    <a class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <div>
+                            <img class="img" src="<%- res.target.avatar %>">
+                          </div>
+                          <h3 class="name"><%- res.target.name %></h3>
+                          <h3 class="name"><%- res.num %>%</h3>
+                        </div>
+                    </a>
+    
+                <% }) %>
+            <% } %>
+
+        </div>
     <% } %>
 
 
