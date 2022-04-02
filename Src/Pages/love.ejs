@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%- title %></title>
     <link rel="icon" href="<%- icon %>" />
+    <link rel="stylesheet" href="./css/scroll.css" >
     <link rel="stylesheet" href="./css/love.css" >
     <link rel="stylesheet" href="./css/responsive/index.css" >
     <script src="https://kit.fontawesome.com/31fd7c4de0.js" crossorigin="anonymous"></script>
@@ -14,16 +15,21 @@
 
     <%- include('includes/navbar.ejs'); -%>
 
-
+    <div class="top">
         <form action="/love" method="GET">
-          <input name="user" class="search" type="text" placeholder="Please enter the user id to search">
+            <input name="user" class="search" type="text" placeholder="Please Enter The User Id To Search">
         </form>
+
+        <div class="text">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, explicabo. Consectetur incidunt explicabo sit hic pariatur nesciunt odio illum a eveniet fugiat sequi dolorum, culpa necessitatibus voluptates maiores iste! Aspernatur.
+        </div>
+    </div>
 
 
     <% if(user) { %>
 
         <% result.forEach(res => { %>
-            <%- res.user.avatar %>
+            <%- res.target.avatar %>
         <% }) %>
 
     <% } else { %>
