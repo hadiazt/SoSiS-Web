@@ -1,7 +1,23 @@
 - [X] 404 Page
 - [X] Main Page
 - [X] SoSiS love DB Page
-- [] SoSiS Page
-- [] SoSiS Security Page
-- [] SoSiS Downloader Page
-- [] Contributors Page
+- [] SoSiS Page => BreakPoint : {
+    - [] Fetching Command With Cheerio
+    - [] Fetching Discord Data (username / profile . . .)
+    - [] Design
+}
+- [] SoSiS Security Page => BreakPoint : {
+    - [] Fetching Command With Cheerio
+    - [] Fetching Discord Data (username / profile . . .)
+    - [] Design
+}
+- [] SoSiS Downloader Page => BreakPoint : {
+    - [] Fetching Command With Cheerio
+    - [] Fetching Discord Data (username / profile . . .)
+    - [] Design
+}
+- [] Contributors Page => BreakPoint : {
+    - [] Fetching Discord Data (username / profile . . .)
+    - [] Fetching GitHub Data (username / profile . . .)
+    - [] Design
+}
