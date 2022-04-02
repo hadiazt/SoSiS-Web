@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%- title %></title>
-    <link rel="icon" href="<%- icon %>" />
-    <link rel="stylesheet" href="./css/scroll.css" >
-    <link rel="stylesheet" href="./css/love.css" >
-    <link rel="stylesheet" href="./css/responsive/index.css" >
-    <script src="https://kit.fontawesome.com/31fd7c4de0.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%- title %></title>
+  <link rel="icon" href="<%- icon %>" />
+  <link rel="stylesheet" href="./css/scroll.css">
+  <link rel="stylesheet" href="./css/love.css">
+  <link rel="stylesheet" href="./css/responsive/index.css">
+  <script src="https://kit.fontawesome.com/31fd7c4de0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-    <%- include('includes/navbar.ejs'); -%>
+  <%- include('includes/navbar.ejs'); -%>
 
-    <div class="top">
-        <form action="/love" method="GET">
-            <input name="user" class="search" type="text" placeholder="Please Enter The User Id To Search">
-        </form>
+  <div class="top">
+    <form action="/love" method="GET">
+      <input name="user" class="search" type="text" placeholder="Please Enter The User Id To Search">
+    </form>
 
-        <div class="text">
+    <div class="text">
 
-        <% if(user) { %>
-            <% if(result[0]) { %>
-                Users found for :
-                <a class="card" style="width: 5rem;">
-                    <div class="card-body">
-                    <div>
-                        <img class="iimg" src="<%- result[0].user.avatar %>">
-                    </div>
-                    <h3 class="iname"><%- result[0].user.name %></h3>
-                    </div>
-                </a>
-            <% } %>
-        <% } else {%>
-            <p style="text-align: center;">Enter the user id to search in DataBase</p>
-        <% } %>
-
+      <% if(user) { %>
+      <% if(result[0]) { %>
+      Users found for :
+      <a class="card" style="width: 5rem;">
+        <div class="card-body">
+          <div>
+            <img class="iimg" src="<%- result[0].user.avatar %>">
+          </div>
+          <h3 class="iname"><%- result[0].user.name %></h3>
         </div>
+      </a>
+      <% } %>
+      <% } else {%>
+      <p style="text-align: center;">Enter the user id to search in DataBase</p>
+      <% } %>
+
     </div>
+  </div>
 
 
-    <% if(user) { %>
-        <div class="table">
+  <% if(user) { %>
 
-            <% if(!result[0]) { %>
-                Nothing found for your input
-            <% } else { %>
-                <% result.forEach(res => { %>
+  <% if(!result[0]) { %>
+  <p style="text-align:center;">Nothing found for your input</p>
+  <% } else { %>
+  <div class="table">
 
-                    <a class="card" style="width: 18rem;">
-                        <div class="card-body">
-                          <div>
-                            <img class="img" src="<%- res.target.avatar %>">
-                          </div>
-                          <h3 class="name"><%- res.target.name %></h3>
-                          <h3 class="name"><%- res.num %>%</h3>
-                        </div>
-                    </a>
-    
-                <% }) %>
-            <% } %>
+    <% result.forEach(res => { %>
 
+    <a class="card" style="width: 18rem;">
+      <div class="card-body">
+        <div>
+          <img class="img" src="<%- res.target.avatar %>">
         </div>
-    <% } %>
+        <h3 class="name"><%- res.target.name %></h3>
+        <h3 class="name"><%- res.num %>%</h3>
+      </div>
+    </a>
+
+    <% }) %>
+  </div>
+  <% } %>
+
+  <% } %>
 
 
 
