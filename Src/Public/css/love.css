@@ -117,10 +117,28 @@ body {
 
 /*  */
 
-.intro{
+.intro {
     width: 100%;
     height: 100%;
     padding: 10px;
     background-color: #131418;
     text-align: center;
 }
+
+.search {
+    padding: 0 5px 0 5px;
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    height: 50px;
+    background-color: #090b0f;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* .search:hover{
+    transform: translateY(-5px);
+    transition: .4s;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+} */
