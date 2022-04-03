@@ -3,7 +3,7 @@
 - [X] SoSiS love DB Page
 - [] SoSiS Page => BreakPoint : {
     - [] Fetching Command With Cheerio
-    - [] Fetching Discord Data (username / profile . . .)
+    - [X] Fetching Discord Data (username / profile . . .)
     - [] Design
 }
 - [] SoSiS Security Page => BreakPoint : {
