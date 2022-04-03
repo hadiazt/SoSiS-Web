@@ -12,30 +12,12 @@ exports.index = async (req, res) => {
         icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
         support: "https://discord.gg/6vhPVYkNU9",
         pages: [
-            {
-                name: 'Home',
-                url: '/'
-            },
-            {
-                name: 'SoSiS',
-                url: '/sosis'
-            },
-            {
-                name: 'Love DB',
-                url: '/love'
-            },
-            {
-                name: 'Security',
-                url: '/security'
-            },
-            {
-                name: 'Downloader',
-                url: '/downloader'
-            },
-            {
-                name: 'Contributors',
-                url: '/contributors'
-            },
+            'home',
+            'sosis',
+            'love',
+            'security',
+            'downloader',
+            'contributors',
         ]
     });
 
@@ -84,30 +66,12 @@ exports.love = async (req, res) => {
                 user,
                 result,
                 pages: [
-                    {
-                        name: 'Home',
-                        url: '/'
-                    },
-                    {
-                        name: 'SoSiS',
-                        url: '/sosis'
-                    },
-                    {
-                        name: 'Love DB',
-                        url: '/love'
-                    },
-                    {
-                        name: 'Security',
-                        url: '/security'
-                    },
-                    {
-                        name: 'Downloader',
-                        url: '/downloader'
-                    },
-                    {
-                        name: 'Contributors',
-                        url: '/contributors'
-                    },
+                    'home',
+                    'sosis',
+                    'love',
+                    'security',
+                    'downloader',
+                    'contributors',
                 ]
             });
         }, 6000);
@@ -118,30 +82,12 @@ exports.love = async (req, res) => {
             support: "https://discord.gg/6vhPVYkNU9",
             user,
             pages: [
-                {
-                    name: 'Home',
-                    url: '/'
-                },
-                {
-                    name: 'SoSiS',
-                    url: '/sosis'
-                },
-                {
-                    name: 'Love DB',
-                    url: '/love'
-                },
-                {
-                    name: 'Security',
-                    url: '/security'
-                },
-                {
-                    name: 'Downloader',
-                    url: '/downloader'
-                },
-                {
-                    name: 'Contributors',
-                    url: '/contributors'
-                },
+                'home',
+                'sosis',
+                'love',
+                'security',
+                'downloader',
+                'contributors',
             ]
         });
     }
@@ -162,30 +108,12 @@ exports.sosis = async (req, res) => {
                 inv: 'https://discord.com/api/oauth2/authorize?client_id=762378493929455617&permissions=137439861953&scope=bot%20applications.commands'
             },
             pages: [
-                {
-                    name: 'Home',
-                    url: '/'
-                },
-                {
-                    name: 'SoSiS',
-                    url: '/sosis'
-                },
-                {
-                    name: 'Love DB',
-                    url: '/love'
-                },
-                {
-                    name: 'Security',
-                    url: '/security'
-                },
-                {
-                    name: 'Downloader',
-                    url: '/downloader'
-                },
-                {
-                    name: 'Contributors',
-                    url: '/contributors'
-                },
+                'home',
+                'sosis',
+                'love',
+                'security',
+                'downloader',
+                'contributors',
             ]
         });
     })
