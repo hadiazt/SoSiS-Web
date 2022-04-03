@@ -18,7 +18,7 @@ exports.index = async (req, res) => {
             },
             {
                 name: 'SoSiS',
-                url: '/main'
+                url: '/sosis'
             },
             {
                 name: 'Love DB',
@@ -90,7 +90,7 @@ exports.love = async (req, res) => {
                     },
                     {
                         name: 'SoSiS',
-                        url: '/main'
+                        url: '/sosis'
                     },
                     {
                         name: 'Love DB',
@@ -124,7 +124,7 @@ exports.love = async (req, res) => {
                 },
                 {
                     name: 'SoSiS',
-                    url: '/main'
+                    url: '/sosis'
                 },
                 {
                     name: 'Love DB',
@@ -146,6 +146,49 @@ exports.love = async (req, res) => {
         });
     }
 
+
+};
+
+exports.sosis = async (req, res) => {
+
+    User({ UserID: '762378493929455617', BotToken: process.env.BotToken }).then((user) => {
+        res.render("../Pages/sosis.ejs", {
+            title: 'SoSiS - Main Bot',
+            icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
+            support: "https://discord.gg/6vhPVYkNU9",
+            bot: {
+                name: user.username,
+                img: user.avatar.png,
+                inv: 'https://discord.com/api/oauth2/authorize?client_id=762378493929455617&permissions=137439861953&scope=bot%20applications.commands'
+            },
+            pages: [
+                {
+                    name: 'Home',
+                    url: '/'
+                },
+                {
+                    name: 'SoSiS',
+                    url: '/sosis'
+                },
+                {
+                    name: 'Love DB',
+                    url: '/love'
+                },
+                {
+                    name: 'Security',
+                    url: '/security'
+                },
+                {
+                    name: 'Downloader',
+                    url: '/downloader'
+                },
+                {
+                    name: 'Contributors',
+                    url: '/contributors'
+                },
+            ]
+        });
+    })
 
 };
 
