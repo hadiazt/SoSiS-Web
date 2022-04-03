@@ -4,7 +4,8 @@ const express = require('express'),
     router = express.Router();
 
 
-router.get('/', Controller.index);
+router.get('/' || '/home', Controller.index);
+router.get('/home', Controller.index);
 router.get('/love', Controller.love);
 router.get('/sosis', Controller.sosis);
 
