@@ -105,7 +105,9 @@ exports.sosis = async (req, res) => {
             bot: {
                 name: user.username,
                 img: user.avatar.png,
-                inv: 'https://discord.com/api/oauth2/authorize?client_id=762378493929455617&permissions=137439861953&scope=bot%20applications.commands'
+                inv: 'https://discord.com/api/oauth2/authorize?client_id=762378493929455617&permissions=137439861953&scope=bot%20applications.commands',
+                src:'https://github.com/hadiazt/SoSiS-v2',
+                des:'SoSiS is a fun bot that it coded for you to entertain\nand have a good time In Discord.'
             },
             pages: [
                 'home',
