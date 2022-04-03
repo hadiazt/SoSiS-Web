@@ -5,7 +5,7 @@ exports.get404 = async (req, res) => {
         pages: [
             '/',
             '/love',
-            '/main',
+            '/sosis',
             '/security',
             '/downloader',
             '/contributors'
