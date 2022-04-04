@@ -36,9 +36,12 @@
 
 
     <div id="commands">
-      <div class="command">
-        kir kos
-      </div>
+      <% commands.forEach(command => { %>
+        <div class="command">
+          <%- command.name %> <%- command.des %>
+        </div>
+      <% }) %>
+
     </div>
 
 
