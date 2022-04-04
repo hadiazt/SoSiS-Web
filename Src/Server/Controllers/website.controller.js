@@ -19,7 +19,6 @@ exports.index = async (req, res) => {
             'contributors',
         ]
     });
-
 };
 
 exports.love = async (req, res) => {
