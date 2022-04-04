@@ -28,7 +28,7 @@ app.use("/love", websiteRouter);
 app.use("/sosis", websiteRouter);
 app.use("/security", websiteRouter);
 app.use("/downloader", websiteRouter);
-// app.use("/contributors", websiteRouter);
+app.use("/contributors", websiteRouter);
 
 
 app.use(require("./Controllers/error.controller").get404);
