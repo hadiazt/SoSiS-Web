@@ -129,7 +129,6 @@ exports.sosis = async (req, res) => {
             path: req.path
         });
     })
-
 };
 
 exports.security = async (req, res) => {
