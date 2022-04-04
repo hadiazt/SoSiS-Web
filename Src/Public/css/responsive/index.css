@@ -82,3 +82,24 @@
         width: 300px;
     }
 }
+
+@media screen and (max-width: 1170px) {
+    .wrapper {
+        margin-top: 20px;
+    }
+
+    .img {
+        margin: 0 auto 0 auto;
+        display: block;
+        width: 350px;
+        height: 350px;
+    }
+
+    .info {
+        font-size: x-large;
+        margin: 0;
+        padding: 30px;
+        width: auto;
+        height: auto;
+    }
+}
