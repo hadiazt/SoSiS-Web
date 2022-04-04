@@ -90,8 +90,6 @@ exports.love = async (req, res) => {
             ]
         });
     }
-
-
 };
 
 exports.sosis = async (req, res) => {
