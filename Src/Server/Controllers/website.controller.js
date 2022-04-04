@@ -106,8 +106,8 @@ exports.sosis = async (req, res) => {
                 name: user.username,
                 img: user.avatar.png,
                 inv: 'https://discord.com/api/oauth2/authorize?client_id=762378493929455617&permissions=137439861953&scope=bot%20applications.commands',
-                src:'https://github.com/hadiazt/SoSiS-v2',
-                des:'is a fun robot Developted for your entertainment.This robot is a multi-purpose robot Part of the work of this robot: Gif Commands - NSFW Commands - download music from youtube - set funny effects on photos and all other features'
+                src: 'https://github.com/hadiazt/SoSiS-v2',
+                des: 'is a fun robot Developted for your entertainment.This robot is a multi-purpose robot Part of the work of this robot: Gif Commands - NSFW Commands - download music from youtube - set funny effects on photos and all other features'
             },
             pages: [
                 'home',
@@ -116,6 +116,15 @@ exports.sosis = async (req, res) => {
                 'security',
                 'downloader',
                 'contributors',
+            ],
+            commands: [
+                { name: 'a', des: 'a' },
+                { name: 'a', des: 'a' },
+                { name: 'a', des: 'a' },
+                { name: 'a', des: 'a' },
+                { name: 'a', des: 'a' },
+                { name: 'a', des: 'a' },
+                { name: 'a', des: 'a' },
             ]
         });
     })
