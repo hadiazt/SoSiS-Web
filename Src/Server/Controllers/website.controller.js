@@ -1,6 +1,6 @@
 const axios = require("axios");
 const { User } = require("discord-info")
-const { Database } = require('beta.db')
+const { Database } = require('beta.db');
 const db = new Database('./Src/Public/data.json')
 require('dotenv').config({ path: './Src/Server/config.env' });
 
@@ -205,3 +205,6 @@ exports.downloader = async (req, res) => {
 
 };
 
+exports.contributors = async(req, res) => {
+
+};
