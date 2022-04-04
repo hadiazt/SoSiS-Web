@@ -30,8 +30,6 @@ exports.love = async (req, res) => {
     if (user) {
         axios.get('https://raw.githubusercontent.com/hadiazt/SoSiS-v2/main/data/love.json').then(res => {
             db.set("Data", res.data);
-
-
             const ids = Object.keys(res.data)
 
             User({ UserID: user, BotToken: process.env.BotToken }).then((user) => {
@@ -56,7 +54,6 @@ exports.love = async (req, res) => {
                 })
             })
         })
-
         setTimeout(() => {
             res.render("../Pages/love.ejs", {
                 title: 'SoSiS - Love DataBase',
