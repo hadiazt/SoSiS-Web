@@ -125,26 +125,40 @@ body {
 .wrapper {
     margin: 20px 0 0 20px;
 }
+
 .img {
     display: inline-block;
-    width:350px;
-    height:350px;
+    width: 350px;
+    height: 350px;
 }
+
 .info {
     font-size: x-large;
     margin: 100px 0 0 100px;
-    vertical-align:top;
+    vertical-align: top;
     display: inline-block;
-    width:700px;
-    height:400px;
+    width: 700px;
+    height: 400px;
 }
-#commands{
+
+#commands {
     padding: 20px;
 }
-.command{
+
+.command {
+    width: 99%;
     margin: 0 0 20px 0;
     background-color: lightgrey;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px;
     color: black;
+}
+
+.command-red {
+    width: 99%;
+    padding: 10px;
+    background-color: #EA2F48;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #D20622;
 }
