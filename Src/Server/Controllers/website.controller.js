@@ -107,7 +107,7 @@ exports.sosis = async (req, res) => {
                 img: user.avatar.png,
                 inv: 'https://discord.com/api/oauth2/authorize?client_id=762378493929455617&permissions=137439861953&scope=bot%20applications.commands',
                 src:'https://github.com/hadiazt/SoSiS-v2',
-                des:'SoSiS is a fun bot that it coded for you to entertain\nand have a good time In Discord.'
+                des:'is a fun robot designed for your entertainment\nHave a good time at Discord\nThis robot is a multi-purpose robot\nPart of the work of this robot: Gif Commands - NSFW Commands - download music from youtube - set funny effects on photos and all other features\n'
             },
             pages: [
                 'home',
