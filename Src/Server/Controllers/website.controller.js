@@ -9,14 +9,7 @@ exports.index = async (req, res) => {
         title: "SoSiS - Imagine a bot",
         icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
         support: "https://discord.gg/6vhPVYkNU9",
-        pages: [
-            'home',
-            'sosis',
-            'love',
-            'security',
-            'downloader',
-            'contributors',
-        ]
+        pages: ['home', 'sosis', 'love', 'security', 'downloader', 'contributors']
     });
 };
 
@@ -191,6 +184,6 @@ exports.downloader = async (req, res) => {
 
 };
 
-exports.contributors = async(req, res) => {
+exports.contributors = async (req, res) => {
 
 };
