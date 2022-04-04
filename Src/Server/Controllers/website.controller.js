@@ -118,14 +118,14 @@ exports.sosis = async (req, res) => {
                 'contributors',
             ],
             commands: [
-                { name: 'afk', des: 'a' },
-                { name: 'dn', des: 'a' },
-                { name: 'effect', des: 'a' },
-                { name: 'game', des: 'a' },
-                { name: 'gif', des: 'a' },
-                { name: 'love', des: 'a' },
-                { name: 'nsfw', des: 'a' },
-                { name: 'profile', des: 'a' },
+                { name: 'afk', des: 'Set Your Self As AFK' },
+                { name: 'dn', des: 'Download MP3 From YouTube' },
+                { name: 'effect', des: 'Set Effect To Image' },
+                { name: 'game', des: 'Starts An Game From Truth Or Dare' },
+                { name: 'gif', des: 'Sends A Random GiF In Selected Category' },
+                { name: 'love', des: 'Calculats Your Love To Mentioned User' },
+                { name: 'nsfw', des: 'Sends A Random NSFW Content In Selected Category' },
+                { name: 'profile', des: 'Sends A Random Profile In Selected Category' },
             ]
         });
     })
