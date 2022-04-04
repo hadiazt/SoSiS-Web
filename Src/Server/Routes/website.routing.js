@@ -8,6 +8,8 @@ router.get('/' || '/home', Controller.index);
 router.get('/home', Controller.index);
 router.get('/love', Controller.love);
 router.get('/sosis', Controller.sosis);
+router.get('/security', Controller.security);
+router.get('/downloader', Controller.downloader);
 
 
 module.exports = router;
