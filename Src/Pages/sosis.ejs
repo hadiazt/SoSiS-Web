@@ -38,10 +38,12 @@
     <div id="commands">
       <% commands.forEach(command => { %>
         <div class="command">
-          <%- command.name %> <%- command.des %>
+          /<%- command.name %> : <%- command.des %>
         </div>
       <% }) %>
-
+      <div class="command-red">
+        Simple Commands Are Not In The List Use /help Command For More
+      </div>
     </div>
 
 
