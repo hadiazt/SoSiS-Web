@@ -135,14 +135,7 @@ exports.downloader = async (req, res) => {
                 src: 'https://github.com/hadiazt/SoSiS-Downloader',
                 des: 'is the most complete bot in the field of downloaders that can provide you with anything you can think of in discord environment.'
             },
-            pages: [
-                'home',
-                'sosis',
-                'love',
-                'security',
-                'downloader',
-                'contributors',
-            ],
+            pages: ['home', 'sosis', 'love', 'security', 'downloader', 'contributors',],
             commands: [
                 { name: 'consolegame', des: 'Search Your Entry On Console Category' },
                 { name: 'movie', des: 'Search Your Entry On Movie Category' },
