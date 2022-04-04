@@ -49,14 +49,7 @@ exports.love = async (req, res) => {
                 support: "https://discord.gg/6vhPVYkNU9",
                 user,
                 result,
-                pages: [
-                    'home',
-                    'sosis',
-                    'love',
-                    'security',
-                    'downloader',
-                    'contributors',
-                ]
+                pages: ['home', 'sosis', 'love', 'security', 'downloader', 'contributors',]
             });
         }, 6000);
     } else {
@@ -65,14 +58,7 @@ exports.love = async (req, res) => {
             icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
             support: "https://discord.gg/6vhPVYkNU9",
             user,
-            pages: [
-                'home',
-                'sosis',
-                'love',
-                'security',
-                'downloader',
-                'contributors',
-            ]
+            pages: ['home', 'sosis', 'love', 'security', 'downloader', 'contributors',]
         });
     }
 };
