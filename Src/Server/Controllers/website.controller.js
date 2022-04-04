@@ -118,13 +118,14 @@ exports.sosis = async (req, res) => {
                 'contributors',
             ],
             commands: [
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
+                { name: 'afk', des: 'a' },
+                { name: 'dn', des: 'a' },
+                { name: 'effect', des: 'a' },
+                { name: 'game', des: 'a' },
+                { name: 'gif', des: 'a' },
+                { name: 'love', des: 'a' },
+                { name: 'nsfw', des: 'a' },
+                { name: 'profile', des: 'a' },
             ]
         });
     })
