@@ -105,14 +105,7 @@ exports.security = async (req, res) => {
                 src: 'https://github.com/hadiazt/SoSiS-SEC',
                 des: 'Protect your server from Raids, Nuke and . . . with multi-purpose Discord Security Bot'
             },
-            pages: [
-                'home',
-                'sosis',
-                'love',
-                'security',
-                'downloader',
-                'contributors',
-            ],
+            pages: ['home', 'sosis', 'love', 'security', 'downloader', 'contributors',],
             commands: [
                 { name: 'actionlog', des: 'Set Server Aciton Log' },
                 { name: 'addtrusted', des: 'Set Guild WhiteList' },
