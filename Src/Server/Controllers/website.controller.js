@@ -98,7 +98,7 @@ exports.love = async (req, res) => {
 exports.sosis = async (req, res) => {
 
     User({ UserID: '762378493929455617', BotToken: process.env.BotToken }).then((user) => {
-        res.render("../Pages/sosis.ejs", {
+        res.render("../Pages/bot.ejs", {
             title: `SoSiS - ${user.username} Bot`,
             icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
             support: "https://discord.gg/6vhPVYkNU9",
@@ -126,7 +126,8 @@ exports.sosis = async (req, res) => {
                 { name: 'love', des: 'Calculats Your Love To Mentioned User' },
                 { name: 'nsfw', des: 'Sends A Random NSFW Content In Selected Category' },
                 { name: 'profile', des: 'Sends A Random Profile In Selected Category' },
-            ]
+            ],
+            path: req.path
         });
     })
 
@@ -135,7 +136,7 @@ exports.sosis = async (req, res) => {
 exports.security = async (req, res) => {
 
     User({ UserID: '780703694886010902', BotToken: process.env.BotToken }).then((user) => {
-        res.render("../Pages/sosis.ejs", {
+        res.render("../Pages/bot.ejs", {
             title: `SoSiS - ${user.username} Bot`,
             icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
             support: "https://discord.gg/6vhPVYkNU9",
@@ -155,14 +156,16 @@ exports.security = async (req, res) => {
                 'contributors',
             ],
             commands: [
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-            ]
+                { name: 'actionlog', des: 'Set Server Aciton Log' },
+                { name: 'addtrusted', des: 'Set Guild WhiteList' },
+                { name: 'anti', des: 'Set Guild Anti Raid Config' },
+                { name: 'joingate', des: 'Set Guild Join Gate Config' },
+                { name: 'removetrusted', des: 'Remove Guild WhiteList' },
+                { name: 'set', des: 'Set Guild Limitation Config' },
+                { name: 'show', des: 'Show The List Of Limits & Configs' },
+                { name: 'trustedlist', des: 'Show The List Of WhiteList Users' },
+            ],
+            path: req.path
         });
     })
 
@@ -171,7 +174,7 @@ exports.security = async (req, res) => {
 exports.downloader = async (req, res) => {
 
     User({ UserID: '768503531526291499', BotToken: process.env.BotToken }).then((user) => {
-        res.render("../Pages/downloader.ejs", {
+        res.render("../Pages/bot.ejs", {
             title: `SoSiS - ${user.username} Bot`,
             icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
             support: "https://discord.gg/6vhPVYkNU9",
@@ -196,7 +199,8 @@ exports.downloader = async (req, res) => {
                 { name: 'pcgame', des: 'Search Your Entry On PC Category' },
                 { name: 'song', des: 'Search Your Entry On Songs Category' },
                 { name: 'tv', des: 'Search Your Entry On TV Category' },
-            ]
+            ],
+            path: req.path
         });
     })
 
