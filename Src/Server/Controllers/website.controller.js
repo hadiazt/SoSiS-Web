@@ -76,14 +76,7 @@ exports.sosis = async (req, res) => {
                 src: 'https://github.com/hadiazt/SoSiS-v2',
                 des: 'is a fun robot Developted for your entertainment.This robot is a multi-purpose robot Part of the work of this robot: Gif Commands - NSFW Commands - download music from youtube - set funny effects on photos and all other features'
             },
-            pages: [
-                'home',
-                'sosis',
-                'love',
-                'security',
-                'downloader',
-                'contributors',
-            ],
+            pages: ['home', 'sosis', 'love', 'security', 'downloader', 'contributors',],
             commands: [
                 { name: 'afk', des: 'Set Your Self As AFK' },
                 { name: 'dn', des: 'Download MP3 From YouTube' },
