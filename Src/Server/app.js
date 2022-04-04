@@ -26,8 +26,8 @@ app.use('/', websiteRouter);
 app.use('/home', websiteRouter);
 app.use("/love", websiteRouter);
 app.use("/sosis", websiteRouter);
-// app.use("/security", websiteRouter);
-// app.use("/downloader", websiteRouter);
+app.use("/security", websiteRouter);
+app.use("/downloader", websiteRouter);
 // app.use("/contributors", websiteRouter);
 
 
