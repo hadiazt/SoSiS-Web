@@ -150,5 +150,11 @@ exports.downloader = async (req, res) => {
 };
 
 exports.contributors = async (req, res) => {
+    res.render("../Pages/contributors.ejs",{
+        title: "SoSiS - Imagine a bot",
+
+        pages: ['home', 'sosis', 'love', 'security', 'downloader', 'contributors',],
+
+    })
 
 };
