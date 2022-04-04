@@ -138,3 +138,12 @@ body {
     width:700px;
     height:400px;
 }
+#commands{
+    padding: 20px;
+}
+.command{
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+}
