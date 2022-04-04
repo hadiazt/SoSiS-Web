@@ -99,7 +99,7 @@ exports.sosis = async (req, res) => {
 
     User({ UserID: '762378493929455617', BotToken: process.env.BotToken }).then((user) => {
         res.render("../Pages/sosis.ejs", {
-            title: 'SoSiS - Main Bot',
+            title: `SoSiS - ${user.username} Bot`,
             icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
             support: "https://discord.gg/6vhPVYkNU9",
             bot: {
@@ -170,17 +170,17 @@ exports.security = async (req, res) => {
 
 exports.downloader = async (req, res) => {
 
-    User({ UserID: '762378493929455617', BotToken: process.env.BotToken }).then((user) => {
-        res.render("../Pages/sosis.ejs", {
-            title: 'SoSiS - Main Bot',
+    User({ UserID: '768503531526291499', BotToken: process.env.BotToken }).then((user) => {
+        res.render("../Pages/downloader.ejs", {
+            title: `SoSiS - ${user.username} Bot`,
             icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
             support: "https://discord.gg/6vhPVYkNU9",
             bot: {
                 name: user.username,
                 img: user.avatar.png,
-                inv: 'https://discord.com/api/oauth2/authorize?client_id=762378493929455617&permissions=137439861953&scope=bot%20applications.commands',
-                src: 'https://github.com/hadiazt/SoSiS-v2',
-                des: 'is a fun robot Developted for your entertainment.This robot is a multi-purpose robot Part of the work of this robot: Gif Commands - NSFW Commands - download music from youtube - set funny effects on photos and all other features'
+                inv: 'https://discord.com/api/oauth2/authorize?client_id=768503531526291499&permissions=412317240385&scope=applications.commands%20bot',
+                src: 'https://github.com/hadiazt/SoSiS-Downloader',
+                des: 'is the most complete bot in the field of downloaders that can provide you with anything you can think of in discord environment.'
             },
             pages: [
                 'home',
@@ -191,13 +191,11 @@ exports.downloader = async (req, res) => {
                 'contributors',
             ],
             commands: [
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
-                { name: 'a', des: 'a' },
+                { name: 'consolegame', des: 'Search Your Entry On Console Category' },
+                { name: 'movie', des: 'Search Your Entry On Movie Category' },
+                { name: 'pcgame', des: 'Search Your Entry On PC Category' },
+                { name: 'song', des: 'Search Your Entry On Songs Category' },
+                { name: 'tv', des: 'Search Your Entry On TV Category' },
             ]
         });
     })
