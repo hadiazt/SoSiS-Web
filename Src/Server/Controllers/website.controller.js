@@ -4,7 +4,6 @@ const { Database } = require('beta.db')
 const db = new Database('./Src/Public/data.json')
 require('dotenv').config({ path: './Src/Server/config.env' });
 
-
 exports.index = async (req, res) => {
 
     res.render("../Pages/index.ejs", {
