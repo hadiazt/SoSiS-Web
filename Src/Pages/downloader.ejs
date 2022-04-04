@@ -16,16 +16,14 @@
 
 <body>
 
-  <%- include('includes/navbar.ejs'); -%>
+    <%- include('includes/navbar.ejs'); -%>
   
-
     <div class="wrapper">
       <div class="img">
         <img class="bot-img" src="<%- bot.img %>"/>
       </div>
       <div class="info">
-        <%- bot.name %> <%- bot.des %>
-      
+        <%- bot.name %> <%- bot.des %>      
         <div>
           <a href="<%- bot.inv %>" target="_blank"><button class="join-button">Invite</button></a>
           <a href="<%- bot.src %>" target="_blank"><button class="join-button">Source</button></a>
@@ -40,16 +38,11 @@
         <div class="command">
           /<%- command.name %> : <%- command.des %>
         </div>
-      <% }) %>
+      <% }) %>    
       <div class="command-red">
         Simple Commands Are Not In The List Use /help Command For More
       </div>
-  
     </div>
-
-
-
-
 
 </body>
 <script src="./js/nav.js"></script>
