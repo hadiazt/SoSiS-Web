@@ -25,7 +25,6 @@ exports.index = async (req, res) => {
 exports.love = async (req, res) => {
     const result = []
     const user = req.query.user
-
     if (user) {
         axios.get('https://raw.githubusercontent.com/hadiazt/SoSiS-v2/main/data/love.json').then(res => {
             db.set("Data", res.data);
