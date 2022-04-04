@@ -95,7 +95,6 @@ exports.love = async (req, res) => {
 };
 
 exports.sosis = async (req, res) => {
-
     User({ UserID: '762378493929455617', BotToken: process.env.BotToken }).then((user) => {
         res.render("../Pages/bot.ejs", {
             title: `SoSiS - ${user.username} Bot`,
