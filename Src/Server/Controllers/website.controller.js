@@ -134,16 +134,16 @@ exports.sosis = async (req, res) => {
 
 exports.security = async (req, res) => {
 
-    User({ UserID: '762378493929455617', BotToken: process.env.BotToken }).then((user) => {
+    User({ UserID: '780703694886010902', BotToken: process.env.BotToken }).then((user) => {
         res.render("../Pages/sosis.ejs", {
-            title: 'SoSiS - Main Bot',
+            title: `SoSiS - ${user.username} Bot`,
             icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
             support: "https://discord.gg/6vhPVYkNU9",
             bot: {
                 name: user.username,
                 img: user.avatar.png,
-                inv: 'https://discord.com/api/oauth2/authorize?client_id=762378493929455617&permissions=137439861953&scope=bot%20applications.commands',
-                src: 'https://github.com/hadiazt/SoSiS-v2',
+                inv: 'https://discord.com/api/oauth2/authorize?client_id=780703694886010902&permissions=8&scope=bot%20applications.commands',
+                src: 'https://github.com/hadiazt/SoSiS-SEC',
                 des: 'is a fun robot Developted for your entertainment.This robot is a multi-purpose robot Part of the work of this robot: Gif Commands - NSFW Commands - download music from youtube - set funny effects on photos and all other features'
             },
             pages: [
