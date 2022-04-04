@@ -144,7 +144,7 @@ exports.security = async (req, res) => {
                 img: user.avatar.png,
                 inv: 'https://discord.com/api/oauth2/authorize?client_id=780703694886010902&permissions=8&scope=bot%20applications.commands',
                 src: 'https://github.com/hadiazt/SoSiS-SEC',
-                des: 'is a fun robot Developted for your entertainment.This robot is a multi-purpose robot Part of the work of this robot: Gif Commands - NSFW Commands - download music from youtube - set funny effects on photos and all other features'
+                des: 'Protect your server from Raids, Nuke and . . . with multi-purpose Discord Security Bot'
             },
             pages: [
                 'home',
