@@ -133,7 +133,6 @@ exports.sosis = async (req, res) => {
 };
 
 exports.security = async (req, res) => {
-
     User({ UserID: '780703694886010902', BotToken: process.env.BotToken }).then((user) => {
         res.render("../Pages/bot.ejs", {
             title: `SoSiS - ${user.username} Bot`,
@@ -167,7 +166,6 @@ exports.security = async (req, res) => {
             path: req.path
         });
     })
-
 };
 
 exports.downloader = async (req, res) => {
