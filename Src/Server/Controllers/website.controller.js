@@ -51,7 +51,7 @@ exports.love = async (req, res) => {
                 result,
                 pages: ['home', 'sosis', 'love', 'security', 'downloader', 'contributors',]
             });
-        }, 6000);
+        }, 1000);
     } else {
         res.render("../Pages/love.ejs", {
             title: 'SoSiS - Love DataBase',
@@ -150,10 +150,27 @@ exports.downloader = async (req, res) => {
 };
 
 exports.contributors = async (req, res) => {
-    res.render("../Pages/contributors.ejs",{
-        title: "SoSiS - Imagine a bot",
-        icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
-        support: "https://discord.gg/6vhPVYkNU9",
-        pages: ['home', 'sosis', 'love', 'security', 'downloader', 'contributors']
-    })
+
+    var hadi = {}
+    var parsa = {}
+    var mani = {}
+    var matin = {}
+
+    User({ UserID: '490519932292038659', BotToken: process.env.BotToken }).then((user) => { hadi = { name: user.tag, avatar: user.avatar.png, roles: ['Founder', 'Developer'] } })
+    User({ UserID: '488958506280550402', BotToken: process.env.BotToken }).then((user) => { parsa = { name: user.tag, avatar: user.avatar.png, roles: ['Developer'] } })
+    User({ UserID: '744431935316688916', BotToken: process.env.BotToken }).then((user) => { mani = { name: user.tag, avatar: user.avatar.png, roles: ['Designer', 'Management'] } })
+    User({ UserID: '741239951353708576', BotToken: process.env.BotToken }).then((user) => { matin = { name: user.tag, avatar: user.avatar.png, roles: ['Manager'] } })
+
+    setTimeout(() => {
+        res.render("../Pages/contributors.ejs", {
+            title: "SoSiS - Imagine a bot",
+            icon: "https://cdn.discordapp.com/avatars/762378493929455617/f3cac0f6d38cd184ac25005df8711753.png?size=2048",
+            support: "https://discord.gg/6vhPVYkNU9",
+            pages: ['home', 'sosis', 'love', 'security', 'downloader', 'contributors'],
+            hadi,
+            parsa,
+            mani,
+            matin
+        })
+    }, 1000);
 };
