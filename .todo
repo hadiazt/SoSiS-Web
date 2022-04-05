@@ -3,8 +3,5 @@
 - [X] SoSiS love DB Page
 - [X] SoSiS Page
 - [X] SoSiS Security Page
-- [] SoSiS Downloader Page => BreakPoint : {
-    - [] Fetching Discord Data (username / profile . . .)
-    - [] Design
-}
+- [X] SoSiS Downloader Page
 - [X] Contributors Page
