@@ -156,9 +156,9 @@ exports.contributors = async (req, res) => {
     var mani = {}
     var matin = {}
 
-    User({ UserID: '490519932292038659', BotToken: process.env.BotToken }).then((user) => { hadi = { name: user.tag, avatar: user.avatar.png, roles: ['Founder', 'Developer'] } })
+    User({ UserID: '490519932292038659', BotToken: process.env.BotToken }).then((user) => { hadi = { name: user.tag, avatar: user.avatar.png, roles: ['Founder ,', 'Developer'] } })
     User({ UserID: '488958506280550402', BotToken: process.env.BotToken }).then((user) => { parsa = { name: user.tag, avatar: user.avatar.png, roles: ['Developer'] } })
-    User({ UserID: '744431935316688916', BotToken: process.env.BotToken }).then((user) => { mani = { name: user.tag, avatar: user.avatar.png, roles: ['Designer', 'Management'] } })
+    User({ UserID: '744431935316688916', BotToken: process.env.BotToken }).then((user) => { mani = { name: user.tag, avatar: user.avatar.png, roles: ['Designer ,', 'Management'] } })
     User({ UserID: '741239951353708576', BotToken: process.env.BotToken }).then((user) => { matin = { name: user.tag, avatar: user.avatar.png, roles: ['Manager'] } })
 
     setTimeout(() => {
