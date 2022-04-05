@@ -1,10 +1,7 @@
 - [X] 404 Page
 - [X] Main Page
 - [X] SoSiS love DB Page
-- [] SoSiS Page => BreakPoint : {
-    - [X] Fetching Discord Data (username / profile . . .)
-    - [] Design
-}
+- [X] SoSiS Page
 - [] SoSiS Security Page => BreakPoint : {
     - [] Fetching Discord Data (username / profile . . .)
     - [] Design
