@@ -7,7 +7,4 @@
     - [] Fetching Discord Data (username / profile . . .)
     - [] Design
 }
-- [] Contributors Page => BreakPoint : {
-    - [] Fetching GitHub Data (username / profile . . .)
-    - [] Design
-}
+- [X] Contributors Page
