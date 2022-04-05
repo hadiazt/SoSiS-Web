@@ -51,7 +51,7 @@ exports.love = async (req, res) => {
                 result,
                 pages: ['home', 'sosis', 'love', 'security', 'downloader', 'contributors',]
             });
-        }, 1000);
+        }, 6000);
     } else {
         res.render("../Pages/love.ejs", {
             title: 'SoSiS - Love DataBase',
@@ -172,5 +172,5 @@ exports.contributors = async (req, res) => {
             mani,
             matin
         })
-    }, 1000);
+    }, 6000);
 };
