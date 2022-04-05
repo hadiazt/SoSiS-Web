@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%- title %></title>
+  <link rel="icon" href="<%- icon %>" />
+  <link rel="stylesheet" href="./css/scroll.css">
+  <link rel="stylesheet" href="./css/contributors.css">
+  <link rel="stylesheet" href="./css/responsive/index.css">
+  <script src="https://kit.fontawesome.com/31fd7c4de0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <%- include('includes/navbar.ejs'); -%>
+
+    <div class="table">
+            
+        <div class="card">
+            <img class="card-img" src="<%- hadi.avatar %>">
+            <div class="card-body">
+                <div class="card-txt">
+                    <span><%- hadi.name %></span></br>
+                        <% hadi.roles.forEach(role => { %>
+                        <span style="font-size: x-small; color: #8c8c8e;">
+                            <%- role %> 
+                        </span>
+                        <% }) %>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="<%- parsa.avatar %>">
+            <div class="card-body">
+                <div class="card-txt">
+                    <span><%- parsa.name %></span></br>
+                        <% parsa.roles.forEach(role => { %>
+                        <span style="font-size: x-small; color: #8c8c8e;">
+                            <%- role %> 
+                        </span>
+                        <% }) %>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="<%- mani.avatar %>">
+            <div class="card-body">
+                <div class="card-txt">
+                    <span><%- mani.name %></span></br>
+                        <% mani.roles.forEach(role => { %>
+                        <span style="font-size: x-small; color: #8c8c8e;">
+                            <%- role %> 
+                        </span>
+                        <% }) %>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img class="card-img" src="<%- matin.avatar %>">
+            <div class="card-body">
+                <div class="card-txt">
+                    <span><%- matin.name %></span></br>
+                        <% matin.roles.forEach(role => { %>
+                        <span style="font-size: x-small; color: #8c8c8e;">
+                            <%- role %> 
+                        </span>
+                        <% }) %>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+<script src="./js/nav.js"></script>
+
+</html>
