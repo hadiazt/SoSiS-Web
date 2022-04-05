@@ -4,7 +4,7 @@
   "description": "SoSiS Bots Website",
   "main": "./Src/Server/server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node ./Src/Server/server.js"
   },
   "repository": {
     "type": "git",
