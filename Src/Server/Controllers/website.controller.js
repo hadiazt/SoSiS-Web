@@ -103,16 +103,19 @@ exports.security = async (req, res) => {
                 img: user.avatar.png,
                 inv: 'https://discord.com/api/oauth2/authorize?client_id=780703694886010902&permissions=8&scope=bot%20applications.commands',
                 src: 'https://github.com/hadiazt/SoSiS-SEC',
-                des: 'Protect your server from Raids, Nuke and . . . with multi-purpose Discord Security Bot'
+                des: `Protect your Discord server from attackers, nukers and any type of damage, with ${user.username}.
+${user.username} has everything you’d need for an anti-nuke bot. It was really easy to setup and the guide was easy to config. 
+${user.username} is like a Staff except a bot.
+                `
             },
             pages: ['home', 'sosis', 'love', 'security', 'downloader', 'contributors',],
             commands: [
                 { name: 'actionlog', des: 'Set Server Aciton Log' },
                 { name: 'addtrusted', des: 'Set Guild WhiteList' },
-                { name: 'anti', des: 'Set Guild Anti Raid Config' },
-                { name: 'joingate', des: 'Set Guild Join Gate Config' },
+                { name: 'anti', des: 'Set Guild Anti Raid Config [ Bot, Mention Everyone/Here, Discord Invite, Website Link, Malware Link, NSFW Link ]' },
+                { name: 'joingate', des: 'Set Guild Join Gate Config [ No Avatar Filter, Account Age Filter 1 - 7 Days ]' },
                 { name: 'removetrusted', des: 'Remove Guild WhiteList' },
-                { name: 'set', des: 'Set Guild Limitation Config' },
+                { name: 'set', des: 'Set Guild Limitation Config [ Role Creation, Role Delete, Channel Creation, Channel Delete, Ban, Kick ]' },
                 { name: 'show', des: 'Show The List Of Limits & Configs' },
                 { name: 'trustedlist', des: 'Show The List Of WhiteList Users' },
             ],
@@ -133,7 +136,9 @@ exports.downloader = async (req, res) => {
                 img: user.avatar.png,
                 inv: 'https://discord.com/api/oauth2/authorize?client_id=768503531526291499&permissions=412317240385&scope=applications.commands%20bot',
                 src: 'https://github.com/hadiazt/SoSiS-Downloader',
-                des: 'is the most complete bot in the field of downloaders that can provide you with anything you can think of in discord environment.'
+                des: `Download Any Everything.
+${user.username} bot has arrived to download anything you can think of in Discord environment.
+The simplest downloader bot ! Put in only a word and it comes out as top 3 results`
             },
             pages: ['home', 'sosis', 'love', 'security', 'downloader', 'contributors',],
             commands: [
